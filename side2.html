@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  h2 {font-family:courier;text-align:center;color:red;border:2px solid white;}
+  h1 {font-Family:arial;}
+  p {font-Family:arial;}
+  .city{
+    background-color: lightblue;
+    color:white;
+    padding:5px;
+  }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: courier;
+}
+
+/* Style the header */
+header {
+  background-color: #ADD8E6;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: #F5F5F5;
+  padding: 5px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #FFFAFA;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #ADD8E6;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>STUDIETUR TIL SINGAPORE</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><h2 class="city"><a href="index.html"style="text-decoration:none">Singapore som GCP-destination</a></h2></li>
+      <br>
+      <li><h2 class="city"><a href="side3.html"style="text-decoration:none">Før du tager afsted</a></h2></li>
+      <br>
+      <li><h2 class="city"><a href="side4.html"style="text-decoration:none">De bedste minder</a></h2></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>Partnerskolen</h1>
+    <img src="billederTilHjemmeside/Singapore_Viktor.jpg" style="float:right;width:30%;">
+    <p>Vi besøgte vores partnerskole Dunman Secondary School fra d.15 til d.17.<br><br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lectus quis sem lacinia nonummy.
+       Proin mollis lorem non dolor. In hac habitasse platea dictumst. Nulla ultrices odio. Donec augue.
+       Phasellus dui. Maecenas facilisis nisl vitae nibh. Proin vel seo est vitae eros pretium dignissim.
+       Aliquam aliquam sodales orci. Suspendisse potenti. Nunc adipiscing euismod arcu. Quisque facilisis mattis lacus.
+       Fusce bibendum, velit in venenatis viverra, tellus ligula dignissim felis, quis euismod mauris tellus ut urna.
+       Proin scelerisque. Nulla in mi.
+       Integer ac leo. Nunc urna ligula, gravida a, pretium vitae, bibendum nec, ante.
+       Aliquam ullamcorper iaculis lectus. Sed vel dui. Etiam lacinia risus vitae lacus. Aliquam elementum imperdiet turpis.
+       In id metus. Mauris eu nisl. Nam pharetra nisi nec enim. Nulla aliquam, tellus sed laoreet blandit, eros urna vehicula lectus,
+       et vulputate mauris arcu ut arcu. Praesent eros metus lirum larum, accumsan a, malesuada et, commodo vel, nulla.
+       Aliquam sagittis auctor sapien. Morbi a nibh.
+    </p>
+
+    <img src="billederTilHjemmeside/malikpådunman.jpg" style="float:right;width:30%;">
+
+    <p>Klik <a href="https://dunmansec.moe.edu.sg">her</a> for at gå til skolens hjemmeside.</p>
+
+    <h1>Homestay... førstehåndsindtrykket</h1>
+    <p> Min singaporeaner hedder Yunyen</p>
+
+
+  </article>
+</section>
+
+<footer>
+  <p>Lavet af Mathilde 2017t. All rights reserved. </p>
+</footer>
+
+</body>
+</html>

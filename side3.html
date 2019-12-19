@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  h2 {font-family:courier;text-align:center;color:red;border:2px solid white;}
+  h1 {font-Family:arial;}
+  p {font-Family:arial;}
+  li {font-Family:arial;}
+  .city{
+    background-color: lightblue;
+    color:white;
+    padding:5px;
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: courier;
+}
+
+/* Style the header */
+header {
+  background-color: #ADD8E6;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: #F5F5F5;
+  padding: 5px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #FFFAFA;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #ADD8E6;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>STUDIETUR TIL SINGAPORE</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><h2 class="city"><a href="index.html"style="text-decoration:none">Singapore som GCP-destination</a></h2></li>
+      <br>
+      <li><h2 class="city"><a href="side2.html"style="text-decoration:none">Partnerskole og homestay</a></h2></li>
+      <br>
+      <li><h2 class="city"><a href="side4.html"style="text-decoration:none">De bedste minder</a></h2></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>Før du tager afsted</h1>
+
+    <p> Hvad skal man dog lige have styr på før man sætter sig ind i flyet? </p>
+    <ul>
+      <li><b>Vaccinationer</b></li>
+      <p>Vaccinationer er måske ikke lide de fleste tænker over. Den er derfor øverst på listen, da det godt kan tage lidt tid. Når man rejser ud i verden, skal man også lige have styr på ens vaccinationer.
+        Men hvilke har man egentlig brug for når man skal til Singapore? <br><br>I min klasse fik vi lidt forskelligt. Dette har afhængt af hvad man i forvejen har og hvad ens læges vurdering har været.
+        Jeg har ikke selv været uden for Europa så skulle have nogen stykker: difteri og stivkrampe, hepatitis A og Hepatits B. Normalt ved 10 dages rejse er kravet mindre, men fordi man bor
+        hos lokale i nogle dage, er man i større "risiko" for at flere sygdomme. Nogen fik også for tyfus, men alle overlevede ligegyldig hvad.
+        Så spørg din læge, og gør det i god tid. Med nogle af dem skal man revaccineres med en måneds mellemrum.</p>
+      <p>Klik <a href="https://rejse.ssi.dk/rejsevaccinationslande/s/singapore#!/1week">her</a> for at læse mere om vaccinationer før turen går til Singapore..</p>
+      <li><b>Data og wifi</b></li>
+      <p>Har du heller ikke forældre som har forkælet dig med et abonnoment, der kan bruges verden over, eller var så kloge at købe data til turen før du tog afsted?
+        Det havde jeg nemlig ikke. Men det er heldigvis ikke svære end at gå ned i en 7-eleven og købe et simkort. Lidt over 100 kr for en uge, var det vidst.
+        Ellers udnyt at du nu kan forberede dig, og tjekke hvad dit teleselskab kan tilbyde;)</p>
+      <li><b>Pakkeliste</b></li>
+        <p>Hvad skal jeg dog have med?? Singapore har et meget varmt og fugtigt klima, så tyndt og løst tøj er et must.   </p>
+      <ul>
+        <li>Dresscode</li>
+          <p>På Dunman bærer de unimformer med skjorte og nederdel eller bukser. Derudover er der dresscode på skolen, hvor t-shirts, nedringet trøjer,
+          shorts, kort nederdel, sandaler, mange smykker ikke er tilladt. Vi var selv i chok da vi fik det at vide herhjemme, for der er meget meget varmt i Singapore. Men efter at have snakket med vores bogstavsklasse, som lige havde været af sted.
+          De sagde at singaporeanerne var meget overbærende, og på billeder kunne vi se at nogen havde kortere tøj på alligevel. Vi fandt ud af det samme, men de fleste valgt alligevel at bære skjorte,
+          her kan en skjorte med korte ærmer være en løsning. Lyder varmt, og det var det også, men hvis man sørger for at tøjet er lidt løst, så går det fint. Efter skole behøver man ikke have det på,
+          så have evt. en anden trøje med, medmindre du godt kan lide at lugte af sved resten af dagen.
+      </ul>
+    </ul>
+
+    <img src="billederTilHjemmeside/changi airport lang.jpg" width=100%>
+
+  </article>
+</section>
+
+<footer>
+  <p>Lavet af Mathilde 2017t. All rights reserved. </p>
+</footer>
+
+</body>
+</html>

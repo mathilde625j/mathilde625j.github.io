@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  h2 {font-family:courier;text-align:center;color:red;border:2px solid white;}
+  h1 {font-Family:arial;}
+  p {font-Family:arial;}
+  .city{
+    background-color: lightblue;
+    color:white;
+    padding:5px;
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: courier;
+}
+
+/* Style the header */
+header {
+  background-color: #ADD8E6;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: #F5F5F5;
+  padding: 5px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #FFFAFA;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #ADD8E6;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>STUDIETUR TIL SINGAPORE</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><h2 class="city"><a href="side2.html" style="text-decoration:none">Partnerskolen og homestay</a></h2></li>
+      <br>
+      <li><h2 class="city"><a href="side3.html"style="text-decoration:none">Før du tager afsted</a></h2></li>
+      <br>
+      <li><h2 class="city"><a href="side4.html"style="text-decoration:none">De bedste minder</a></h2></li>
+    </ul>
+  </nav>
+
+  <article>
+    <p>  Nu er det snart jeres tur! <br><br> Lidt nervøs måske? <br><br> Frygt ej! Denne hjemmeside er lavet for at guide dig</p>
+    <h1>Singapore som GCP-destination</h1>
+
+    <img src="billederTilHjemmeside/view.jpg" width=100%>
+
+    <p>Singapore er jo egentlig både en ø, et land og en by i ét. Singapore har præcis som Danmark lidt over 5,5 millioner indbyggere,
+      men hvor vi er spredt over et areal på 43.000 kvadratkilometer, så er Singapores indbyggere begrænset til 715 kvadratkilometer,
+      hvilket ca. svarer til størrelsen på Bornholm. Dette gør Singapore til det mindste land i Asien, og ses som en mikrostat.
+      Men på den anden side gør det egentlig bare lettere at komme godt omkring på øen, hvilket i kommer til at nyde når man får 'fri leg' til at gå rundt. <br><br>
+      Ved første øjekast vil i nok lægge mærke til de mange skilte med bøder, i lufthavnen, metroen og på gå-gaden. Man må ikk
+
+      og hvad bøden  er hvis den overtrædes. Vi havde godt hørt om det der med, at man ikke må spytte tyggegummi ud på gaden,
+      men nej, det er endnu værre. Du må ikke engang tygge tyggegummi. Faktisk bliver det betragtet som at smugle, hvis du bliver taget med en tyggegummipakke i lufthavnen.
+      Du kan også få en bøde for at køre på skateboard eller smide et stykke papir på jorden - eller sågar for at stille dig op og holde en offentlig tale.
+      Antallet af underlige love, der er sat ind for at gøre Singapore til en fin by, er uendeligt, men til gengæld fungerer alt, og byen er tæt på at være det sikreste sted i verden.
+      Der er næsten ingen kriminalitet, idet lemfældig omgang med loven straffes hårdt, enten med bøder, stokkeslag eller fængsel, og når det kommer til våben og narkotika snakker vi dødsstraf.
+      Ingen nåde. Af med knoppen!
+     </p>
+
+    <h1>GCP-film</h1>
+    <p>Rejsen til Singapore er ikke ren leg - det er det dog 95% af tiden, men der skal jo også laves en GCP-film,
+        så vores kære Anders Schultz kan klappe i sine hænder på den store GCP-dag... Men hvordan skal sådan en lige laves? <br><br>
+      Nedestående video er min gruppes film, feel free til at bruge den som inspiration eller blot at få en ide om hvad Singapore er for en størrelse.</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Dr7Das4mCI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+  </article>
+</section>
+
+<footer>
+  <p>Lavet af Mathilde 2017t. All rights reserved. </p>
+</footer>
+
+</body>
+</html>
